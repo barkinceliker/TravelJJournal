@@ -1,0 +1,352 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(255, 0, 0, 0.035),#0a2642); /* Adjust colors as needed */
+  color: #000000;
+  font-family: 'Tektur', sans-serif;
+  
+}
+
+  
+.card{
+    background-color: rgba(81, 81, 81, 0.077);
+}/* styles.css */
+
+  .night-mode body {
+    /* Background color for night mode */
+    background-color: black;
+  }
+  
+  /* Add more styles as needed */
+ /* styles.css */
+.like-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  float: left;
+}
+
+.like-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-button:hover {
+  color: #e85656;
+  background-color: transparent;
+}
+
+.like-button.liked {
+  color: #ff0000c3;
+  border-color: #ff69b4;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .like-button-container {
+    flex-direction: column;
+  }
+  
+  .like-button {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+  }
+}
+
+div img.pp{
+  margin-right: 100rem;
+}
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a thick gray shadow */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+.cardx:hover {
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+
+.cardx{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a thick gray shadow */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+}
+
+.icon_header {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 26px;
+}
+
+.icon,
+.icon_header {
+  margin-right: 5px;
+}
+
+.close_icon {
+  color: red;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Grid Container Styles */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: 'sidebar header header header' 'sidebar main main main';
+  height: 100vh;
+}
+
+/* Header Styles */
+
+.header {
+  grid-area: header;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+
+.header-left {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: #263043;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0px 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar-title > span {
+  display: none;
+}
+
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+}
+
+.sidebar-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.sidebar-list-item > a {
+  text-decoration: none;
+  color: #9e9ea4;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+
+/* Main Styles */
+
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px 20px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3),
+.card:nth-child(4),
+.card:nth-child(5),
+.card:nth-child(6),
+.card:nth-child(7) {
+  background: linear-gradient(to top, #c9cdd7, #084e6577);
+}
+
+.card:nth-child(8) {
+  background: linear-gradient(to right, #c9cdd7, #22b3e446);
+}
+
+.card:hover {
+  background: linear-gradient(to right, #f5f5f5, #72a4b5e8);/* Change to the desired hover colors */
+}
+
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-inner > .card_icon {
+  font-size: 25px;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+  height:calc(100vh - 60px);
+  color:black;
+  
+}
+
+/* Responsive Styles */
+
+/* Medium <= 992px */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 'header' 'main';
+    
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+}
+
+/* Small <= 768px */
+@media screen and (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    
+  }
+}
+
+/* Extra Small <= 576px */
+@media screen and (max-width: 576px) {
+  .header-left {
+    display: none;
+  }
+}
+
+/* Add this to your styles.css or create a new stylesheet */
+.input-text {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-right: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-text:focus {
+  border-color: #3498db;
+}
+/* Add this to your styles.css or create a new stylesheet */
+.main-container {
+  background: linear-gradient(to right, #0e2e4d,#110129); /* Adjust colors as needed */
+  padding: 20px; /* Adjust padding as needed */
+  color: #ffffff; /* Set text color to white or a contrasting color */
+}
+/* Add this to your styles.css or create a new stylesheet */
+main {
+  background: linear-gradient(to right, #858548, #0a2642); /* Adjust colors as needed */
+  padding: 20px; /* Adjust padding as needed */
+  color: #ffffff; /* Set text color to white or a contrasting color */
+}
+/* Add this to your global styles or create a new stylesheet */
+.logout-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #3498db; /* You can change the background color as needed */
+  color: #fff;
+  border-radius: 5px;
+}
+
